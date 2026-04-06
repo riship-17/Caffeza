@@ -1,5 +1,5 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
-import bridgeImg from 'src/assets/All you need is a brunch on Sunday 🤤🥗@cafezza_be_caffeinated #cafe #brunch #brunch🍴 #brunchti.jpg';
+import bridgeImg from '../assets/brunch.jpg';
 
 export default function BridgeFeature() {
   const imgRef = useScrollReveal({ x: -60, duration: 1.2 })
