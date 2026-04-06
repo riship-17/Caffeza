@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
+import heroImg from '../assets/6663.webp'
 
 export default function Hero({ loaded }) {
   const eyebrowRef = useRef(null)
@@ -83,7 +84,7 @@ export default function Hero({ loaded }) {
       
       <div className="hero-right">
         <img 
-          src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=800&q=80" 
+          src={heroImg} 
           alt="Cafezza Interior" 
           className={`hero-image ${loaded ? 'loaded' : ''}`}
         />

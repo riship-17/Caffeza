@@ -1,4 +1,5 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import bridgeImg from '../assets/unnamed (6).jpg'
 
 export default function BridgeFeature() {
   const imgRef = useScrollReveal({ x: -60, duration: 1.2 })
@@ -11,7 +12,7 @@ export default function BridgeFeature() {
       <div className="bridge-grid">
         <div className="bridge-img-wrap" ref={imgRef}>
           <img 
-            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=700&q=80" 
+            src={bridgeImg} 
             alt="Bridge View at Night" 
           />
           <div className="bridge-img-frame"></div>

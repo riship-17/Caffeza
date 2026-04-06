@@ -1,4 +1,6 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import aboutImg1 from '../assets/unnamed (1).webp'
+import aboutImg2 from '../assets/unnamed (8).jpg'
 
 export default function About() {
   const leftRef = useScrollReveal({ y: 60, duration: 1 })
@@ -41,13 +43,13 @@ export default function About() {
       <div className="about-images">
         <img 
           ref={img1Ref}
-          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" 
+          src={aboutImg1} 
           alt="Cafezza Ambient Interior" 
           className="about-img-1" 
         />
         <img 
           ref={img2Ref}
-          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" 
+          src={aboutImg2} 
           alt="Artisan Latte Art" 
           className="about-img-2" 
         />
