@@ -101,6 +101,14 @@ button { cursor: none; border: none; outline: none; font-family: inherit; }
   color: var(--beige-4);
   opacity: 0;
 }
+.loader-logo-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent-light);
+  margin-bottom: 1rem;
+}
 .loader-logo span { color: var(--accent-light); }
 .loader-tagline {
   font-family: 'Iosevka Charon Mono', monospace;
@@ -142,13 +150,13 @@ button { cursor: none; border: none; outline: none; font-family: inherit; }
 .navbar.scrolled {
   padding: 0.7rem 3.5rem;
 }
-.nav-logo {
-  font-family: 'Grandstander', cursive;
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: var(--dark);
+.nav-logo .logo-img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent);
 }
-.nav-logo span { color: var(--accent); }
 .nav-links {
   display: flex;
   gap: 2.4rem;
@@ -841,11 +849,14 @@ button { cursor: none; border: none; outline: none; font-family: inherit; }
   padding-bottom: 4rem;
 }
 .footer-brand-logo {
-  font-family: 'Grandstander', cursive;
-  font-weight: 800;
-  font-size: 1.6rem;
-  color: var(--beige-4);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.footer-logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent);
 }
 .footer-brand-logo span { color: var(--accent-light); }
 .footer-brand-tagline {

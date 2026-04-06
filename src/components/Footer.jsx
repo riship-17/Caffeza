@@ -1,5 +1,6 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import { Instagram, MapPin, Mail, Phone } from 'lucide-react'
+import logoImg from '../assets/cafezza.jpg'
 
 export default function Footer() {
   const footerRef = useScrollReveal({ y: 30, duration: 1 })
@@ -9,7 +10,7 @@ export default function Footer() {
       <div className="footer-grid">
         <div className="footer-brand">
           <div className="footer-brand-logo">
-            Cafez<span>za</span>
+            <img src={logoImg} alt="Cafezza Logo" className="footer-logo-img" />
           </div>
           <p className="footer-brand-tagline">
             Gujarat's only bridge café. An Italian culinary escape on the iconic bridge of Kudasan.

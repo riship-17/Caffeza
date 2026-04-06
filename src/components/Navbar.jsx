@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import gsap from 'gsap'
+import logoImg from '../assets/cafezza.jpg'
 
 export default function Navbar({ loaded }) {
   const [scrolled, setScrolled] = useState(false)
@@ -27,7 +28,7 @@ export default function Navbar({ loaded }) {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} ref={navRef}>
       <a href="#" className="nav-logo">
-        Cafez<span>za</span>
+        <img src={logoImg} alt="Cafezza Logo" className="logo-img" />
       </a>
       <div className="nav-links">
         <a href="#about" className="nav-link">About</a>
